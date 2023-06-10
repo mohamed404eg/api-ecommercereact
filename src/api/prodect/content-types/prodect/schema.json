@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prodects",
+  "info": {
+    "singularName": "prodect",
+    "pluralName": "prodects",
+    "displayName": "Prodect"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "text"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
