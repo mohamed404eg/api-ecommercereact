@@ -73,12 +73,26 @@
       ],
       "default": "En"
     },
-    "FullName": {
+    "firstName": {
       "type": "string",
       "required": true
     },
     "address": {
       "type": "text"
+    },
+    "lastName": {
+      "type": "string",
+      "required": true
+    },
+    "phone": {
+      "type": "string",
+      "maxLength": 13
+    },
+    "allowExtraEmails": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
     }
   }
 }
