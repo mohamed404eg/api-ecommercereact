@@ -4,7 +4,8 @@
   "info": {
     "singularName": "menu-second-dropdown",
     "pluralName": "menu-second-dropdowns",
-    "displayName": "MenuSecond-dropdown"
+    "displayName": "MenuSecond-dropdown",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -38,6 +39,15 @@
       "relation": "manyToOne",
       "target": "api::menu-second.menu-second",
       "inversedBy": "dropdownlis"
+    },
+    "color": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "#222222"
     }
   }
 }
