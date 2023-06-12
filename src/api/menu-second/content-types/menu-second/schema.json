@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "menu_seconds",
+  "info": {
+    "singularName": "menu-second",
+    "pluralName": "menu-seconds",
+    "displayName": "MenuSecond",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "href": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": false
+    },
+    "dropdown": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    "dropdownlis": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::menu-second-dropdown.menu-second-dropdown",
+      "mappedBy": "menu_second"
+    },
+    "color": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "#222222"
+    }
+  }
+}

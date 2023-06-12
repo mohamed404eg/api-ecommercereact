@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "menu_second_dropdowns",
+  "info": {
+    "singularName": "menu-second-dropdown",
+    "pluralName": "menu-second-dropdowns",
+    "displayName": "MenuSecond-dropdown"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "href": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "menu_second": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::menu-second.menu-second",
+      "inversedBy": "dropdownlis"
+    }
+  }
+}
