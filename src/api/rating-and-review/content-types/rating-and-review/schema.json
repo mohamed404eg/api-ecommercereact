@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rating_and_reviews",
+  "info": {
+    "singularName": "rating-and-review",
+    "pluralName": "rating-and-reviews",
+    "displayName": "Rating&Review"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Reviews": {
+      "type": "text"
+    },
+    "Rating": {
+      "type": "decimal",
+      "required": true
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "rating_and_review"
+    },
+    "prodect": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::prodect.prodect",
+      "inversedBy": "rating_and_reviews"
+    }
+  }
+}

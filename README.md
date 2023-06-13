@@ -68,3 +68,10 @@ Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/
 - Files on GitHub https://github.com/mohamed404eg/api-ecommercereact
 
 ## 12/6/2023 Menu Second was created
+
+## 13/6/2023 Many endpoints are created in the API:
+
+- Brand
+- category
+- Prodect
+- Rating & Review

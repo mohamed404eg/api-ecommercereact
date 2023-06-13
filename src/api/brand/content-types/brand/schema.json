@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "brands",
+  "info": {
+    "singularName": "brand",
+    "pluralName": "brands",
+    "displayName": "Brand"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Brand": {
+      "type": "string"
+    },
+    "prodects": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::prodect.prodect",
+      "inversedBy": "brands"
+    }
+  }
+}

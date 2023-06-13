@@ -4,7 +4,8 @@
   "info": {
     "singularName": "prodect",
     "pluralName": "prodects",
-    "displayName": "Prodect"
+    "displayName": "Prodect",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,14 +13,56 @@
   "pluginOptions": {},
   "attributes": {
     "name": {
-      "type": "text"
+      "type": "string"
     },
     "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
+      ]
+    },
+    "desc": {
+      "type": "text"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "categoties": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::categoty.categoty",
+      "inversedBy": "prodects"
+    },
+    "imageMultiple": {
       "type": "media",
-      "multiple": true
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Video": {
+      "type": "string"
+    },
+    "Color": {
+      "type": "string"
+    },
+    "brands": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::brand.brand",
+      "mappedBy": "prodects"
+    },
+    "rating_and_reviews": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::rating-and-review.rating-and-review",
+      "mappedBy": "prodect"
     }
   }
 }

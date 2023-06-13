@@ -93,6 +93,12 @@
     },
     "country": {
       "type": "string"
+    },
+    "rating_and_review": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::rating-and-review.rating-and-review",
+      "mappedBy": "users_permissions_user"
     }
   }
 }

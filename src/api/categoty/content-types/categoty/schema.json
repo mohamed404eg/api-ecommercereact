@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categoties",
+  "info": {
+    "singularName": "categoty",
+    "pluralName": "categoties",
+    "displayName": "categoty"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "text"
+    },
+    "prodects": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::prodect.prodect",
+      "mappedBy": "categoties"
+    }
+  }
+}
