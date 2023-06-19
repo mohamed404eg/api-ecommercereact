@@ -63,6 +63,9 @@
       "relation": "oneToMany",
       "target": "api::rating-and-review.rating-and-review",
       "mappedBy": "prodect"
+    },
+    "offerprice": {
+      "type": "decimal"
     }
   }
 }

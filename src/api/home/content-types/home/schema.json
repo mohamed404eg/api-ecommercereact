@@ -4,7 +4,8 @@
   "info": {
     "singularName": "home",
     "pluralName": "homes",
-    "displayName": "Home"
+    "displayName": "Home",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -16,17 +17,28 @@
   },
   "attributes": {
     "welcomePhoto": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "videos"
       ],
-      "type": "media",
-      "multiple": true,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       }
+    },
+    "ShopByCategory": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::categoty.categoty"
+    },
+    "firstcategoty": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::categoty.categoty"
     }
   }
 }

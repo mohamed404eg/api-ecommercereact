@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shop_by_category_homes",
+  "info": {
+    "singularName": "shop-by-category-home",
+    "pluralName": "shop-by-category-homes",
+    "displayName": "Shop-by-Category-Home"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}
