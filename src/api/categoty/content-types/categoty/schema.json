@@ -25,14 +25,21 @@
       "mappedBy": "categoties"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "secondname": {
       "type": "string"
+    },
+    "brands": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::brand.brand",
+      "mappedBy": "categoty"
     }
   }
 }

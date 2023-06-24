@@ -66,6 +66,10 @@
     },
     "offerprice": {
       "type": "decimal"
+    },
+    "nameshort": {
+      "type": "string",
+      "maxLength": 30
     }
   }
 }

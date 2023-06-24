@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_specialoffer_specialoffers",
+  "info": {
+    "displayName": "specialoffer"
+  },
+  "options": {},
+  "attributes": {
+    "text1": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "UPtoOFF": {
+      "type": "decimal"
+    },
+    "prodect": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::prodect.prodect"
+    }
+  }
+}

@@ -19,6 +19,12 @@
       "relation": "manyToMany",
       "target": "api::prodect.prodect",
       "inversedBy": "brands"
+    },
+    "categoty": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::categoty.categoty",
+      "inversedBy": "brands"
     }
   }
 }

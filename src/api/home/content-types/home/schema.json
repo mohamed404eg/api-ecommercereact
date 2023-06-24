@@ -39,6 +39,22 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::categoty.categoty"
+    },
+    "specialoffer": {
+      "displayName": "specialoffer",
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "specialoffer.specialoffer"
+    },
+    "SecondCateoty": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::categoty.categoty"
     }
   }
 }
