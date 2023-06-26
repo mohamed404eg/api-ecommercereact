@@ -24,7 +24,7 @@
       ]
     },
     "desc": {
-      "type": "text"
+      "type": "richtext"
     },
     "price": {
       "type": "decimal"
@@ -70,6 +70,14 @@
     "nameshort": {
       "type": "string",
       "maxLength": 30
+    },
+    "Discount": {
+      "type": "integer",
+      "max": 100
+    },
+    "Cashback": {
+      "type": "integer",
+      "max": 100
     }
   }
 }
