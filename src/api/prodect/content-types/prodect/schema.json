@@ -78,6 +78,9 @@
     "Cashback": {
       "type": "integer",
       "max": 100
+    },
+    "todaydeals": {
+      "type": "boolean"
     }
   }
 }
