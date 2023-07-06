@@ -58,6 +58,15 @@
       },
       "type": "string",
       "default": "#222222"
+    },
+    "categoty": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "boolean",
+      "default": false
     }
   }
 }

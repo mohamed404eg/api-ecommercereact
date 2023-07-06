@@ -99,6 +99,12 @@
       "relation": "oneToOne",
       "target": "api::rating-and-review.rating-and-review",
       "mappedBy": "users_permissions_user"
+    },
+    "orders": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::order.order",
+      "mappedBy": "userId"
     }
   }
 }
