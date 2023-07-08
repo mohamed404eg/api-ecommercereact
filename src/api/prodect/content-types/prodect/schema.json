@@ -46,7 +46,7 @@
         "audios"
       ]
     },
-    "Video": {
+    "embedVideoYoutube": {
       "type": "string"
     },
     "Color": {

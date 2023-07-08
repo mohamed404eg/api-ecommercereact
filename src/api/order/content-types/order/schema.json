@@ -26,6 +26,17 @@
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
       "inversedBy": "orders"
+    },
+    "OrderStatus": {
+      "type": "enumeration",
+      "enum": [
+        "Awaiting payment confirmation",
+        "Payment completed successfully",
+        "It is being prepared for delivery",
+        "Something went wrong",
+        "The address is incomplete"
+      ],
+      "default": "Awaiting payment confirmation"
     }
   }
 }

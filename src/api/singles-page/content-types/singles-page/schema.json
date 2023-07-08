@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "singles_pages",
+  "info": {
+    "singularName": "singles-page",
+    "pluralName": "singles-pages",
+    "displayName": "SinglesPage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "body": {
+      "type": "richtext"
+    }
+  }
+}
