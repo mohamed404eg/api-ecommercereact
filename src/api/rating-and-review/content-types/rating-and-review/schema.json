@@ -4,7 +4,8 @@
   "info": {
     "singularName": "rating-and-review",
     "pluralName": "rating-and-reviews",
-    "displayName": "Rating&Review"
+    "displayName": "Rating&Review",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,13 +17,15 @@
     },
     "Rating": {
       "type": "decimal",
-      "required": true
+      "required": true,
+      "max": 5,
+      "min": 0
     },
-    "users_permissions_user": {
+    "userId": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
-      "inversedBy": "rating_and_review"
+      "inversedBy": "rating_and_reviews"
     },
     "prodect": {
       "type": "relation",
