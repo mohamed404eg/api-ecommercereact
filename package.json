@@ -14,7 +14,9 @@
     "@strapi/plugin-users-permissions": "4.11.0",
     "@strapi/provider-upload-cloudinary": "^4.11.0",
     "@strapi/strapi": "4.11.1",
+    "mysql": "^2.18.1",
     "pg": "8.8.0",
+    "strapi-plugin-import-export-entries": "^1.21.0",
     "stripe": "^12.11.0"
   },
   "author": {
