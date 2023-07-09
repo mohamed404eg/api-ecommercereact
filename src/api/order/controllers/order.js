@@ -10,7 +10,7 @@ const { createCoreController } = require("@strapi/strapi").factories;
 
 module.exports = createCoreController("api::order.order", ({ strapi }) => ({
   async create(ctx) {
-    const { email, userId, products } = ctx.request.body;
+    const { email, userId, products } = await ctx.request.body;
     const lineItems = await Promise.all(
       products.map(async (product) => {
         const item = await strapi
