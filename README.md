@@ -76,4 +76,8 @@ Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/
 - Prodect
 - Rating & Review
 
-# 14/6/2023 home 
+# 14/6/2023 home
+
+# /// Help you run the application on the server
+
+pm2 start /home/apkama-api-ecommercereact/htdocs/api-ecommercereact.apkama.com/server.js
