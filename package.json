@@ -1,7 +1,7 @@
 {
   "name": "api-ecommercereact",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop",
@@ -10,19 +10,18 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@strapi/plugin-i18n": "4.11.0",
-    "@strapi/plugin-users-permissions": "4.11.0",
-    "@strapi/provider-upload-cloudinary": "^4.11.0",
-    "@strapi/strapi": "4.11.1",
-    "mysql": "^2.18.1",
-    "pg": "8.8.0",
-    "stripe": "^12.11.0"
+    "@strapi/plugin-i18n": "4.11.4",
+    "@strapi/plugin-users-permissions": "4.11.4",
+    "@strapi/provider-upload-cloudinary": "^4.11.4",
+    "@strapi/strapi": "4.11.4",
+    "mysql": "2.18.1",
+    "stripe": "^12.12.0"
   },
   "author": {
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "6b86a742-c03c-4102-8090-afad6702b778"
+    "uuid": "7a67acf0-9991-463e-b3f7-1aaa39d2d46c"
   },
   "engines": {
     "node": ">=14.19.1 <=18.x.x",

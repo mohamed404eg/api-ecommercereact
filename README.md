@@ -55,29 +55,3 @@ Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/
 ---
 
 <sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
-
-## This application works as a backend for the application https://github.com/mohamed404eg/ecommercereact
-
-["ecommerce react"]("https://github.com/mohamed404eg/ecommercereact")
-
-# History of updates
-
-## 10/6/2023 Created and configured
-
-- URL https://api-ecommercereact.onrender.com/
-- Files on GitHub https://github.com/mohamed404eg/api-ecommercereact
-
-## 12/6/2023 Menu Second was created
-
-## 13/6/2023 Many endpoints are created in the API:
-
-- Brand
-- category
-- Prodect
-- Rating & Review
-
-# 14/6/2023 home
-
-# /// Help you run the application on the server
-
-pm2 start /home/apkama-api-ecommercereact/htdocs/api-ecommercereact.apkama.com/server.js
